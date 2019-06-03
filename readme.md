@@ -17,6 +17,8 @@ git config --global user.email "GIT_AUTHOR_EMAIL"
 - Remove default spotlight keyboard shortcut.
 - Install oh-my-zsh via shell
 - Symlink aliases.zsh to .oh-my-zsh/custom
+- Install `iina`
+- Install `Transmission`
 
 
 ## Thanks To...
