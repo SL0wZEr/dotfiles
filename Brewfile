@@ -15,7 +15,6 @@ brew 'pkg-config'
 brew 'trash'
 brew 'tree'
 brew 'zlib'
-brew 'zsh'
 
 # Development
 brew 'php'
