@@ -1,3 +1,10 @@
+# Cache and logs (Symfony3)
+/var/cache/*
+/var/logs/*
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+
+# OTHERS
 *.log
 *.sql
 *.sqlite

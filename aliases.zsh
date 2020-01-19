@@ -12,6 +12,8 @@ alias ams="php artisan migrate:fresh --seed"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
+alias p="vendor/bin/phpunit"
+alias pf="vendor/bin/phpunit --filter"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
