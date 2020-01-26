@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"Emmet",
+		"Material Theme",
+		"Package Control",
+		"PHP Companion",
+		"SideBarEnhancements",
+		"SnippetMaker",
+		"Tailwind CSS Autocomplete",
+		"Theme - Solarized Flat"
+	]
+}

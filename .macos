@@ -317,14 +317,6 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
-
-###############################################################################
-# Sublime Text                                                                #
-###############################################################################
-
-# Install Sublime Text settings
-cp -r $HOME/.dotfiles/init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-
 ###############################################################################
 # Transmission.app                                                            #
 ###############################################################################

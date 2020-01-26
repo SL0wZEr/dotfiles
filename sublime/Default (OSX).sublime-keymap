@@ -1,0 +1,4 @@
+[
+	{ "keys": ["super+shift+a"], "command": "expand_selection", "args": {"to": "scope"} },
+	{ "keys": ["ctrl+i"], "command": "find_use" },
+]

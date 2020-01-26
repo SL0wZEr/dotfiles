@@ -1,8 +1,10 @@
 {
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
+	"create_window_at_startup": false,
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
-	"detect_indentation": false,
-	"draw_white_space": "all",
+	"detect_indentation": true,
+	"draw_indent_guides": true,
 	"ensure_newline_at_eof_on_save": false,
 	"file_exclude_patterns":
 	[
@@ -19,18 +21,20 @@
 		".git",
 		"node_modules"
 	],
-	"font_face": "Monaco",
+	"font_face": "Fira Code",
 	"font_size": 12,
-	"highlight_modified_tabs": true,
 	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"line_padding_bottom": 20,
 	"match_brackets": true,
-	"match_brackets_angle": true,
 	"remember_open_files": false,
 	"show_encoding": true,
 	"show_line_endings": true,
-	"translate_tabs_to_spaces": false,
+	"theme": "Material-Theme-Palenight.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": true,
-	"create_window_at_startup": false,
+	"use_simple_full_screen": true,
+	"word_wrap": true
 }
