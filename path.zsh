@@ -9,3 +9,5 @@ export PATH="node_modules/.bin:vendor/bin:$PATH"
 # Mysql
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
+# Flutter
+export PATH="$HOME/.flutterio/bin:$PATH"
