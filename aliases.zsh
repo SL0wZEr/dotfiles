@@ -5,6 +5,7 @@ alias reloadcli="source $HOME/.zshrc"
 # Directories
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
+alias apps="cd $HOME/Apps"
 
 # Laravel
 alias a="php artisan"
