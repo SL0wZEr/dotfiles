@@ -1,11 +1,16 @@
+# System 
+alias cat="bat"
+
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
+alias tree="tree -I 'node_modules|cache|vendor'"
+alias ll='ls -al'
 
 # Directories
 alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
-alias apps="cd $HOME/Apps"
+alias sites="cd $HOME/sites"
+alias apps="cd $HOME/apps"
 
 # Laravel
 alias a="php artisan"
@@ -25,6 +30,7 @@ alias gcommit="git add . && git commit"
 alias wip="commit wip"
 alias gst="git status"
 alias gb="git branch"
+alias gp="git pull"
 alias gc="git checkout"
 alias gd="git diff"
 alias gl="git log --oneline --decorate --color"
