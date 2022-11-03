@@ -15,6 +15,7 @@ alias apps="cd $HOME/apps"
 # Laravel
 alias a="php artisan"
 alias ams="php artisan migrate:fresh --seed"
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"

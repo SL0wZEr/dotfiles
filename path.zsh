@@ -8,7 +8,4 @@ export PATH="$HOME/.node/bin:$PATH"
 export PATH="node_modules/.bin:vendor/bin:$PATH"
 
 # Mysql
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-
-# Flutter
-export PATH="$HOME/.flutterio/bin:$PATH"
+export PATH="/usr/local/opt/mysql@8.0/bin:$PATH"
