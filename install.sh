@@ -1,40 +1,21 @@
-#!/bin/sh
-echo "Setting up .."
+#!/usr/bin/env sh
 
-# Check for Homebrew and install if we don't have it
-if test ! $(which brew); then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+DOTFILES="$HOME/.dotfiles"
+
+# Zsh
+ln -sf $DOTFILES/zsh/zshrc $HOME/.zshrc
+
+# Neovim
+rm -rf $HOME/.ideavimrc
+ln -s $DOTFILES/vimidea/ideavimrc $HOME/.ideavimrc
+
+# VimIdea
+
+# Git
+ln -sf $DOTFILES/git/gitconfig $HOME/.gitconfig
+ln -sf $DOTFILES/git/gitignore_global $HOME/.gitignore_global
+
+# Oh My Zsh
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
-
-# Update Homebrew recipes
-brew update
-
-# Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
-brew bundle
-
-# Make ZSH the default shell environment
-chsh -s $(which zsh)
-
-# Install Composer
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
-
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/spark-installer laravel/valet
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
-# Create a Sites directory
-mkdir $HOME/Sites
-
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
-
-# Configuring global .gitignore
-git config --global core.excludesfile $HOME/.dotfiles/.gitignore_global
-
-# Set macOS preferences
-source .macos

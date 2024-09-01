@@ -1,8 +1,0 @@
-<snippet>
-<content><![CDATA[
-\$this->
-]]></content>
-<tabTrigger>$</tabTrigger>
-<description>Autocomplete PHP's this</description>
-<scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, comment.block.php, punctuation.definition.comment.begin.php</scope>
-</snippet>

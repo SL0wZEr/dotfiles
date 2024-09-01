@@ -1,5 +1,6 @@
 # System 
 alias cat="bat"
+alias vim="nvim"
 
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
@@ -15,12 +16,12 @@ alias apps="cd $HOME/apps"
 # Laravel
 alias a="php artisan"
 alias ams="php artisan migrate:fresh --seed"
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+alias sail='[ -f sail ] && sail || vendor/bin/sail'
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
-alias p="vendor/bin/phpunit"
-alias pf="vendor/bin/phpunit --filter"
+alias p="vendor/bin/pest"
+alias pf="vendor/bin/pest --filter"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"

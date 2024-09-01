@@ -1,0 +1,10 @@
+set ideajoin
+let mapleader = " "
+set surround
+set commentary
+
+" Search
+nnoremap <leader>ff :action GotoFile<CR>
+
+" Misc
+nnoremap <leader><cr> :source ~/.ideavimrc<CR>

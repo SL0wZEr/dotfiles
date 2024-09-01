@@ -1,0 +1,43 @@
+[color]
+    ui = auto
+[commit]
+	gpgsign = false
+[core]
+    editor = nvim
+    excludesfile = ~/.gitignore_global
+    pager = delta
+[diff]
+    tool = vimdiff
+[fetch]
+    prune = true
+[help]
+    autocorrect = 10
+[include]
+    path = ~/.gitconfig_local
+[push]
+    default = current
+[rerere]
+    enabled = true
+[merge]
+    conflictstyle = diff3
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    line-numbers = true
+    syntax-theme = Dracula
+    plus-style = "syntax #2A363B"
+    plus-emph-style = "syntax #2D4E45"
+    minus-style = "syntax #3B2C37"
+    minus-emph-style = "syntax #613038"
+[pull]
+    rebase = false
+[init]
+    defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = SL0wZEr
+	email = ahmadawmh@gmail.com

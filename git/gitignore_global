@@ -5,17 +5,25 @@
 !var/logs/.gitkeep
 
 # OTHERS
+.ssh
 *.log
 *.sql
 *.sqlite
 .DS_Store
 .DS_Store?
+.AppleDouble
+.LSOverride
 ._*
 .Spotlight-V100
 .Trashes
 .idea
 .vscode
 .vagrant/
+Icon
+_ide_helper.php
+.lvimrc
+.projections.json
+.phpactor.json
 
 # Vim
 *~
@@ -26,6 +34,7 @@ TAGS
 .TAGS
 !TAGS/
 tags
+vendor-tags
 .tags
 !tags/
 gtags.files
