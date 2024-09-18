@@ -1,5 +1,4 @@
 # Taps
-tap 'caskroom/cask'
 tap 'homebrew/bundle'
 
 # Binaries
@@ -17,10 +16,3 @@ brew 'tree'
 brew 'zlib'
 brew 'fzf'
 brew 'neovim'
-
-# Quicklook
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'quicklook-csv'
-cask 'qlstephen'
